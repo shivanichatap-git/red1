@@ -16,4 +16,4 @@ pipeline {
 		   steps {
 		sh 'cp target/red1.war /home/shivani/Documents/devops/apache-tomcat-9.0.88/webapps'
 			}}	
-
+	}}
