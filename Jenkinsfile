@@ -24,7 +24,7 @@ pipeline {
 			script {
 			 if ( env.ENV == 'QA' ){
         	sh 'cp target/red1.war /home/shivani/Documents/devops/apache-tomcat-9.0.88/webapps'
-'
+
         	echo "deployment has been COMPLETED on QA!"
 			 }
 			else ( env.ENV == 'UAT' ){
