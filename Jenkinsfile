@@ -1,5 +1,6 @@
 pipeline {
 	agent any 
+	slackSend baseUrl: 'https://hooks.slack.com/services /', channel: 'april-fool', color: 'good', message: 'fool', teamDomain: 'devops'
 	
 	stages {
 	    stage('Checkout') {
