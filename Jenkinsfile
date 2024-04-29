@@ -1,8 +1,7 @@
 pipeline {
 	agent any 
-	slackSend baseUrl: slackSend baseUrl: 'https://hooks.slack.com/services /', channel: 'slacknotification', color: 'good', message: 'nomsg', teamDomain: 'devops'
 	
-	stages {
+       stages {
 	    stage('Checkout') {
 	        steps {
 			checkout scm			       
@@ -15,4 +14,7 @@ pipeline {
 		   steps {
 		sh 'cp target/red1.war /home/shivani/Documents/devops/apache-tomcat-9.0.88/webapps'
 		   }}	
+	       stages {
+		       stage {
+			       
 }}
