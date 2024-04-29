@@ -17,4 +17,5 @@ pipeline {
 	       stages {
 		       stage {
 			       slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'april-fool', color: 'good', message: 'hello', teamDomain: 'devops', tokenCredentialId: 'april'
-}}
+            }}
+       }}
