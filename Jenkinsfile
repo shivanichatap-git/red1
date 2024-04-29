@@ -1,6 +1,7 @@
 pipeline {
 	agent any 
 	
+	slackSend baseUrl: 'https://hooks.slack.com/services /', channel: 'april-fool ', color: 'good', message: 'welcome  to jenkins ', teamDomain: 'devops'
 	stages {
 	    stage('Checkout') {
 	        steps {
