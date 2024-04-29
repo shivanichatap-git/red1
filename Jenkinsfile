@@ -17,4 +17,5 @@ pipeline {
 	       stages {
 		       stage {
 			       
+			       slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'jenkin', color: 'good', teamDomain: 'devops'
 }}
